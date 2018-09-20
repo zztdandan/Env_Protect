@@ -1,0 +1,451 @@
+﻿<html>
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+    <title>固定表头和列</title>
+
+    <style>
+        .FixedTitleRow {
+            position: relative;
+            top: expression(this.offsetParent.scrollTop);
+            z-index: 10;
+            background-color: #E6ECF0;
+        }
+
+
+
+        .FixedTitleColumn {
+            position: relative;
+            left: expression(this.parentElement.offsetParent.scrollLeft);
+        }
+
+
+
+        .FixedDataColumn {
+            position: relative;
+            left: expression(this.parentElement.offsetParent.parentElement.scrollLeft);
+            background-color: #E6ECF0;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="scrollDiv" style="width: 300px; overflow: auto; cursor: default; display: inline;
+
+        position: absolute; height: 200px;">
+
+        <table id='accountTable' width='500' height='230' cellpadding='0' cellspacing='0'
+               style='table-layout: auto' bordercolor='lightgrey'>
+
+            <tbody>
+
+                <tr class="FixedTitleRow">
+
+                    <td class="FixedTitleColumn">
+
+                        ID0
+                    </td>
+
+                    <td class="FixedTitleColumn">
+
+                        CK0
+                    </td>
+
+                    <td class="FixedTitleColumn">
+
+                        Code0
+                    </td>
+
+                    <td class="FixedTitleColumn">
+
+                        Descirption0
+                    </td>
+
+                    <td class="FixedTitleColumn">
+
+                        TOL0
+                    </td>
+
+                    <td>
+
+                        XS0
+                    </td>
+
+                    <td>
+
+                        SS0
+                    </td>
+
+                    <td>
+
+                        MS0
+                    </td>
+
+                    <td>
+
+                        DS0
+                    </td>
+
+                    <td>
+
+                        BS0
+                    </td>
+
+                    <td>
+
+                        XL0
+                    </td>
+
+                    <td>
+
+                        ML0
+                    </td>
+
+                    <td>
+
+                        DL0
+                    </td>
+
+                    <td>
+
+                        EM0
+                    </td>
+
+                    <td>
+
+                        BM0
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="FixedDataColumn">
+
+                        88
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        88
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        88
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        88
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        88
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                    <td>
+
+                        22
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        This is Test
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1
+                    </td>
+
+                    <td>
+
+                        001
+                    </td>
+
+                    <td>
+
+                        002
+                    </td>
+
+                    <td>
+
+                        003
+                    </td>
+
+                    <td>
+
+                        004
+                    </td>
+
+                    <td>
+
+                        005
+                    </td>
+
+                    <td>
+
+                        006
+                    </td>
+
+                    <td>
+
+                        007
+                    </td>
+
+                    <td>
+
+                        008
+                    </td>
+
+                    <td>
+
+                        009
+                    </td>
+
+                    <td>
+
+                        010
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        This is Test
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1
+                    </td>
+
+                    <td>
+
+                        001
+                    </td>
+
+                    <td>
+
+                        002
+                    </td>
+
+                    <td>
+
+                        003
+                    </td>
+
+                    <td>
+
+                        004
+                    </td>
+
+                    <td>
+
+                        005
+                    </td>
+
+                    <td>
+
+                        006
+                    </td>
+
+                    <td>
+
+                        007
+                    </td>
+
+                    <td>
+
+                        008
+                    </td>
+
+                    <td>
+
+                        009
+                    </td>
+
+                    <td>
+
+                        010
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1111
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        This is Test
+                    </td>
+
+                    <td class="FixedDataColumn">
+
+                        1
+                    </td>
+
+                    <td>
+
+                        001
+                    </td>
+
+                    <td>
+
+                        002
+                    </td>
+
+                    <td>
+
+                        003
+                    </td>
+
+                    <td>
+
+                        004
+                    </td>
+
+                    <td>
+
+                        005
+                    </td>
+
+                    <td>
+
+                        006
+                    </td>
+
+                    <td>
+
+                        007
+                    </td>
+
+                    <td>
+
+                        008
+                    </td>
+
+                    <td>
+
+                        009
+                    </td>
+
+                    <td>
+
+                        010
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+</body>
+
+</html>  

@@ -1,0 +1,83 @@
+﻿{
+    "gaolu1A":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu1B":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu2":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu3":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu4":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu5":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gaolu6":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "gongliaofac":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "penchuifac":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "huanshuifac":
+    [
+
+        { "name": "修改除尘器放灰量", "url": "../module/DustRemoval/DRash.aspx", "author": "huanshuifac" },
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "zhunbeifac":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "donglifac":
+    [
+
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" }
+    ],
+    "jidongke":
+    [
+	   { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" },
+	  { "name": "删除粉尘源自检数据", "url": "../module/PSManage/DSinspection.aspx", "author": "jidongke" },
+	        { "name": "修改公司气体检测结果", "url": "../module/PSManage/CMresultGas.aspx", "author": "jidongke" },
+        { "name": "修改公司水体检测结果", "url": "../module/PSManage/CMresultLiq.aspx", "author": "jidongke" },
+        { "name": "修改公司挂牌", "url": "../module/EPLS/ListStatus.aspx", "author": "jidongke" },
+        { "name": "录入新文章", "url": "/module/NewInfo/InfoEnter.aspx", "author": "jidongke" }
+
+    ],
+    "zztadmin":
+    [
+        { "name": "修改公司气体检测结果", "url": "../module/PSManage/CMresultGas.aspx", "author": "chejian" },
+        { "name": "修改公司水体检测结果", "url": "../module/PSManage/CMresultLiq.aspx", "author": "chejian" },
+        { "name": "修改粉尘源自检", "url": "../module/PSManage/DSinspection.aspx", "author": "chejian" },
+        { "name": "修改除尘器放灰量", "url": "../module/DustRemoval/DRash.aspx", "author": "huanshuifac" },
+        { "name": "修改公司挂牌", "url": "../module/EPLS/ListStatus.aspx", "author": "jidongke" },
+        { "name": "录入新文章", "url": "/module/NewInfo/InfoEnter.aspx", "author": "jidongke" }
+    ]
+
+}

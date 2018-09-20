@@ -1,0 +1,1 @@
+userauthorli里面记录每个账号拥有的权限等级，chejian等级只能查看元素author为chejian的元素，以此类推，没有元素拥有两个权限等级，所以实际上只有两个账号，chejian和jidongke，但是对于粉尘源自检能录入的车间那里进行了细分。

@@ -1,0 +1,14 @@
+﻿[
+    { "name": "环保资讯与动态", "type": "环保资讯", "url": "/module/NewInfo/NInfo.aspx?classifyN=0&order=-1" },
+    { "name": "环保法律法规及标准", "type": "环保资讯", "url": "/module/NewInfo/NInfo.aspx?classifyN=1&order=-1" },
+    { "name": "培训学习", "type": "环保资讯", "url": "/module/NewInfo/NInfo.aspx?classifyN=2&order=-1" },
+    { "name": "环境管理体系管理目标", "type": "管理目标与考核情况", "url": "/module/NewInfo/NInfo.aspx?classifyN=3&order=-1" },
+	{ "name": "公司专业责任制考核目标", "type": "管理目标与考核情况", "url": "/module/NewInfo/NInfo.aspx?classifyN=4&order=-1" },
+	{ "name": "挂牌制度", "type": "挂牌制度", "url": "/module/NewInfo/NInfo.aspx?classifyN=5&order=-1" },
+	{ "name": "岗位粉尘检测结果（公司）", "type": "污染源管理", "url": "/module/NewInfo/NInfo.aspx?classifyN=6&order=-1" },
+	{ "name": "其他污染源", "type": "污染源管理", "url": "/module/NewInfo/NInfo.aspx?classifyN=7&order=-1" },
+	{ "name": "其他考核", "type": "管理目标与考核情况", "url": "/module/NewInfo/NInfo.aspx?classifyN=8&order=-1" },
+	{ "name": "应急预案", "type": "应急管理", "url": "/module/NewInfo/NInfo.aspx?classifyN=9&order=-1" },
+	{ "name": "演练记录", "type": "应急管理", "url": "/module/NewInfo/NInfo.aspx?classifyN=10&order=-1" },
+	{ "name": "事故通报", "type": "应急管理", "url": "/module/NewInfo/NInfo.aspx?classifyN=11&order=-1" }
+]

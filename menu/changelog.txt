@@ -1,0 +1,48 @@
+﻿<h1 style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">新的改动</span>
+</h1>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">2015-11-10</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">更改了月挂牌页面使能够在ie正常显示</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">2015-11-1</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">现在可以用ie8或者360浏览器的极速模式正确浏览网页，但是不能用360的基于ie8内核的兼容模式浏览网页，原因查找中...............</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">导航栏增加身份显示，点击跳转到首页</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">除尘放灰量能够正确录入了</span>
+</p>
+<h3 style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: 宋体">旧的改动</span>
+</h3>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri">2015-10-28</span><span style="FONT-FAMILY: 宋体">&nbsp; </span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: 宋体">修改了粉尘源自检页面，机动科现在有删除权限（其他车间没有）</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: 宋体">重做了除尘机运行情况页面</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: 宋体">重做了粉尘源录入页面</span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri"><span style="FONT-FAMILY: Calibri">2015-10-14</span><span style="FONT-FAMILY: 宋体">&nbsp; 兼容性修改</span></span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri"><span style="FONT-FAMILY: 宋体"><span style="FONT-FAMILY: Calibri">2015-10-08 </span><span style="FONT-FAMILY: 宋体">提交一个原形，功能基本实现，进行修改</span></span></span>
+</p>
+<p style="TEXT-ALIGN: left">
+    <span style="FONT-FAMILY: Calibri"><span style="FONT-FAMILY: 宋体"><span style="FONT-FAMILY: 宋体"><span style="FONT-FAMILY: Calibri">2015-9-30 </span><span style="FONT-FAMILY: 宋体">设计新模块，环保交流版，导航页</span></span></span></span>
+</p>
+<p style="text-align: left;">
+    <span style="FONT-FAMILY: Calibri">2015-9-29 </span><span style="FONT-FAMILY: 宋体">网站基本完成，挂牌，文章，数据库等完成</span>
+</p>

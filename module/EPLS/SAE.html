@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="../../JavaScript/jquery1.10.2.min.js"></script>
+    <script src="../../bootstrap3/js/bootstrap.min.js"></script>
+    <script src="../../JavaScript/CookieFunc.js"></script>
+    <script src="/bootstrap3/js/html5shiv.min.js"></script>
+    <script src="/bootstrap3/js/respond.min.js"></script>
+    <link href="../../bootstrap3/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../bootstrap3/js/bootstrap-datetimepicker.min.js"></script>
+    <link href="../../bootstrap3/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <script src="../../ueditor/ueditor.config.js"></script>
+    <script src="../../ueditor/ueditor.all.js"></script>
+    <script src="../../bootstrap3/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+    <script src="../../JavaScript/autocomplete/jquery.autocomplete.min.js"></script>
+    <link href="../../JavaScript/autocomplete/jquery.autocomplete.css" rel="stylesheet" />
+    <script src="../../datatables/js/jquery.dataTables.min.js"></script>
+    <link href="../../datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="../../JavaScript/masonry.pkgd.min.js"></script>
+    <link href="../../bootstrap3/css/buttons.css" rel="stylesheet" />
+    <script src="../../JavaScript/JSONfunction.js"></script>
+    <script src="../../JavaScript/OnLoad.js"></script>
+    <script src="../../JavaScript/Support1.js"></script>
+    <link href="../../css/mycss.css" rel="stylesheet" />
+    <title>事故冒烟</title>
+    <script type="text/javascript">
+        var ue1;
+        function SAE() { }
+        SAE.SwapTime = function (date_select) {//参数是"YYYY年MM月"格式
+            var reg1 = /(\d+)年(\d+)月/;
+            var swapdate = reg1.exec(date_select)[1] + "-" + reg1.exec(date_select)[2];
+            formadd = { "action": "SAECall", "time": swapdate };
+            var _ret = JSONfunc.postJsontoHandler(formadd, "/ajax/CheckInfoHandler.aspx");
+            var _retarray = JSONfunc.STRtoJSON(_ret);
+            $("#SAEContent").html("");
+            SAE.BuildContent(_retarray, $("#SAEContent"));
+             
+        }
+        SAE.fmt = function () {
+            $("#SAE_time").ready(function () {
+                $('#SAE_time').datetimepicker({
+                    format: 'yyyy年mm月',
+                    language: 'zh-CN',
+                    minView: 3,
+                    weekStart: 1,
+                    startDate: '2010-01',
+                    endDate: '2100-01',
+                    todayBtn: "linked",
+                    autoclose: 1,
+                    startView: 3,
+                    forceParse: 0,
+                }).on('changeDate', function (ev) {
+                    var datefmt = (ev.date).pattern("yyyy年MM月");
+                    $("#SAE_show").text(datefmt);
+                    SAE.SwapTime(datefmt);
+                });
+            });//初始化日期选择器,SAE_time为标志
+            $("#Add_date").ready(function () {
+                $('#Add_date').datetimepicker({
+                    format: 'yyyy-mm-dd hh:ii',
+                    language: 'zh-CN',
+                    minView: 0,
+                    weekStart: 1,
+                    startDate: '2010-01-01 00:00:00',
+                    endDate: '2100-01-01 00:00:00',
+                    todayBtn: "linked",
+                    autoclose: 1,
+                    startView: 2,
+                    forceParse: 0,
+                })
+            });//初始化日期选择器,Add_date为标志
+            var facList = (JSONfunc.LoadJSON("/menu/facList.txt")).CheckInfo;
+            $("#Add_fac").autocomplete(facList, {
+                minChars: 0,
+                scroll: true
+            });
+             
+        }
+        SAE.AddInfo = function (inputgroup) {
+            for (i = 0; i < inputgroup.length; i++) {
+                if (inputgroup[i].value == "") {
+                    alert("有项目为空");
+                    return 0;
+                }
+            }
+            var detailstr = ue1.getContent();
+            formadd = { "action": "SaveInfo", "time": inputgroup[0].value, "type": "环境污染事故", "pass": "1", "fac": inputgroup[1].value, "detail":detailstr };
+            var _ret = JSONfunc.postJsontoHandler(formadd, "/ajax/CheckInfoHandler.aspx");
+             
+            alert(_ret);
+        }
+        SAE.BuildContent = function (arrayobj, divobj) {
+            function BuildPanel(_retarray) {
+                var divobj = $('<ul class="list-group"></ul>');
+                $.each(_retarray, function () {
+                    var scedetail = this;
+                    var newli = $('<li class="list-group-item"><p class="text-center help-block"></p><br/><label></label></li>');
+                    
+                    $(newli).find("p").html("车间：" + scedetail.车间 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：" + scedetail.时间);
+                    var delbtn = $("<a class='btna pull-right' author='jidongke'>删除<b class='hidden'>" + scedetail.Id + "</b></a>");
+                    delbtn.on("click", function () {
+                        var id = $(this).find("b").text();
+                        var formkk = { "action": "DelCheckInfo", "id": id };
+                        var ret = JSONfunc.postJsontoHandler(formkk, "/ajax/CheckInfoHandler.aspx");
+                        if (ret == "1") {
+                            $(this).closest("li").remove();
+                        }
+                        else { alert(ret) }
+                    })
+                    
+                    $(newli).append(delbtn);
+                    $(newli).find("label").html(scedetail.详情);
+                    $(divobj).append(newli);
+                })
+               
+                return divobj;
+            }
+            var newul=BuildPanel(arrayobj);
+            divobj.append(newul);
+            CookieFunc.Checkuser();
+             
+        }
+        $(function () {
+            var nowdate = (new Date).pattern("yyyy-MM");
+            $("#SAE_show").text((new Date).pattern("yyyy年MM月"));
+            SAE.fmt();
+            formadd = { "action": "SAECall", "time": nowdate };
+            var _ret = JSONfunc.postJsontoHandler(formadd, "/ajax/CheckInfoHandler.aspx");
+            var _retarray = JSONfunc.STRtoJSON(_ret);
+            SAE.BuildContent(_retarray, $("#SAEContent"));
+        })
+        $("#container").ready(function () {
+            var ue = UE.getEditor('container');
+            ue1 = ue;
+        })
+
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-md-6">
+                <h2>
+                    事故\冒烟情况<small id="SAE_show"></small>
+                    <button id="SAE_time" class="button button-primary button-circle button-longshadow form_datetime"><span class="glyphicon glyphicon-time"></span></button>
+                </h2>
+            </div>
+            <div class="col-md-12 col-md-6">
+                <h2><a href="#" author="jidongke" class="button button-raised button-primary button-pill button-block" data-toggle="collapse" data-target="#Addcollapse" aria-expanded="false" aria-controls="Addcollapse">录入事故\冒烟情况</a></h2>
+              
+            </div>
+            <div class="col-xs-12">
+                <div class="collapse" id="Addcollapse">
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group-sm ">
+                                    <label class="control-label">日期</label>
+                                    <input class="form-control" id="Add_date" size="16" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group-sm ">
+                                    <label class="control-label">车间</label>
+                                    <input type="text" class="form-control" id="Add_fac" />
+                                </div>
+                            </div>
+                          
+                        </div>
+                        <div class="row">
+                            <div class="form-group-sm ">
+                                <label class="control-label">详情</label>
+                                <script id="container" name="content" type="text/plain">
+                                </script>
+                            </div>
+                        </div>
+                        <hr width="100%" size="2" />
+                        <div class="row text-center">
+                            <button type="button" class="button button-raised button-primary" onclick='SAE.AddInfo($("#Addcollapse").find(".form-control"))'>录入事故冒烟情况</button>
+                            <button type="button" class="button button-raised" onclick='SAE.SwapTime($("#SAE_show").text()); $("#Addcollapse").collapse("hide");'>退出录入</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="filter: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color="#23512b" size="1" />
+        <div class="row" >
+            <div class="col-sm-12" id="SAEContent"></div>
+        </div>
+    </div>
+</body>
+</html>

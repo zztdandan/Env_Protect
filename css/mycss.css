@@ -1,0 +1,11 @@
+﻿
+
+body{
+   background:transparent;
+}
+.btna{
+    cursor: pointer;
+}
+img {width:expression(this.width>800?"800px":this.width+"px");}
+
+

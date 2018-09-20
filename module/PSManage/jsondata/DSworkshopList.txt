@@ -1,0 +1,15 @@
+﻿{
+
+    "1#高炉A车间": { "password": "1", "number": 75 ,"author":"gaolu1A"},
+    "1#高炉B车间": { "password":  "2", "number": 75,"author":"gaolu1B" },
+    "2#高炉车间":{ "password":  "3", "number": 180,"author":"gaolu2" },
+    "3#高炉车间": { "password": "4","number":79,"author":"gaolu3" },
+    "4#高炉车间": { "password":"5", "number": 76 ,"author":"gaolu4"},
+    "5#高炉车间": { "password":"6", "number": 80 ,"author":"gaolu5"},
+    "6#高炉车间":{ "password": "7", "number": 83 ,"author":"gaolu6"},
+    "供料车间": { "password":"8", "number": 163,"author":"gongliaofac" },
+    "喷吹车间":{ "password": "9", "number": 65 ,"author":"penchuifac"},
+    "环水车间":{ "password": "10", "number": 68 ,"author":"huanshuifac"},
+    "准备车间": { "password":"11", "number": 30 ,"author":"zhunbeifac"},
+    "动力车间": { "password":"12", "number": 75,"author":"donglifac" }
+}

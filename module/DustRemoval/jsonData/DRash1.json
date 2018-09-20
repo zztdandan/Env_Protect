@@ -1,0 +1,282 @@
+﻿{
+    "date": "2015-8-1",
+    "value":
+    [
+        {
+            "name": "1#A炉铁口除尘系统",
+            "order": 1,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "1#A炉罐位除尘系统",
+            "order": 2,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "1#A炉矿槽除尘系统",
+            "order": 3,
+            "type": "车",
+            "number": 69,
+            "substance": 23
+        },
+        {
+            "name": "1#B炉炉前除尘系统",
+            "order": 4,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+
+        {
+            "name": "1#B炉矿槽除尘系统",
+            "order": 5,
+            "type": "车",
+            "number": 1,
+            "substance": 23
+        },
+        {
+            "name": "2#炉炉前除尘系统",
+            "order": 6,
+            "type": "车",
+            "number": 46,
+            "substance": 23
+        },
+        {
+            "name": "2#炉炉前除尘系统",
+            "order": 6,
+            "type": "罐",
+            "number": 0,
+            "substance": 3
+        },
+        {
+            "name": "2#炉矿槽除尘系统",
+            "order": 7,
+            "type": "车",
+            "number": 46,
+            "substance": 23
+        },
+        {
+            "name": "2#炉矿槽除尘系统",
+            "order": 7,
+            "type": "罐",
+            "number": 0,
+            "substance": 3
+        },
+        {
+            "name": "2#炉焦槽除尘系统",
+            "order": 8,
+            "type": "车",
+            "number": 46,
+            "substance": 23
+        },
+        {
+            "name": "3#炉炉前除尘系统",
+            "order": 9,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "3#炉矿槽除尘系统",
+            "order": 10,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "3#炉矿槽除尘系统",
+            "order": 10,
+            "type": "罐",
+            "number": 0,
+            "substance": 3
+        },
+        {
+            "name": "4#炉炉前除尘系统",
+            "order": 11,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "4#炉炉前除尘系统",
+            "order": 11,
+            "type": "罐",
+            "number": 0,
+            "substance": 3
+        },
+        {
+            "name": "4#炉矿槽除尘系统",
+            "order": 12,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "4#炉矿槽除尘系统",
+            "order": 12,
+            "type": "罐",
+            "number": 0,
+            "substance": 3
+        },
+        {
+            "name": "5#炉炉前除尘系统",
+            "order": 13,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "5#炉矿槽除尘系统",
+            "order": 14,
+            "type": "车",
+            "number": 23,
+            "substance": 23
+        },
+        {
+            "name": "6#炉铁口除尘系统",
+            "order": 15,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "6#炉罐位除尘系统",
+            "order": 16,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        },
+        {
+            "name": "6#炉矿槽除尘系统",
+            "order": 17,
+            "type": "车",
+            "number": 92,
+            "substance": 23
+        },
+        {
+            "name": "5#6#高炉主Ⅳ转运站除尘系统",
+            "order": 18,
+            "type": "车",
+            "number": 15,
+            "substance": 15
+        },
+        {
+            "name": "3#360烧结集中除尘系统",
+            "order": 19,
+            "type": "车",
+            "number": 23,
+            "substance": 23
+        },
+        {
+            "name": "球团区域集中除尘系统",
+            "order": 20,
+            "type": "车",
+            "number": 0,
+            "substance": 15
+        },
+        {
+            "name": "三焦皮带集中除尘系统",
+            "order": 21,
+            "type": "车",
+            "number": 0,
+            "substance": 15
+        },
+        {
+            "name": "四焦皮带集中除尘系统",
+            "order": 22,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+
+        },
+        {
+            "name": "三烧1#皮带转运站除尘系统",
+            "order": 23,
+            "type": "车",
+            "number": 10,
+            "substance": 10
+        },
+        {
+            "name": "四烧2#皮带转运站除尘系统",
+            "order": 24,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "四烧3#皮带转运站除尘系统",
+            "order": 25,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "A区7#皮带转运站除尘系统",
+            "order": 26,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "A区8#皮带转运站除尘系统",
+            "order": 27,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "A区9#皮带转运站除尘系统",
+            "order": 28,
+            "type": "车",
+            "number": 10,
+            "substance": 10
+        },
+        {
+            "name": "A区20#皮带转运站除尘系统",
+            "order": 29,
+            "type": "车",
+            "number": 0,
+            "substance": 15
+        },
+        {
+            "name": "焦炭2#皮带转运站系统",
+            "order": 30,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "焦炭3#皮带转运站系统",
+            "order": 31,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "一焦6#皮带转运站除尘系统",
+            "order": 32,
+            "type": "车",
+            "number": 0,
+            "substance": 15
+        },
+        {
+            "name": "二焦19#皮带转运站除尘系统",
+            "order": 33,
+            "type": "车",
+            "number": 0,
+            "substance": 10
+        },
+        {
+            "name": "铸铁机",
+            "order": 34,
+            "type": "车",
+            "number": 0,
+            "substance": 23
+        }
+    ]
+          
+}

@@ -1,0 +1,16 @@
+﻿[
+    { "name": "监测时间", "number": "2000-01-01 00:00" },
+    { "name": "水温", "number": 0 },
+    { "name": "pH", "number": 0 },
+    { "name": "悬浮物", "number": 0 },
+    { "name": "化学需氧量", "number": 0 },
+    { "name": "氨氮", "number": 0 },
+    { "name": "总氮", "number": 0 },
+    { "name": "石油类", "number": 0 },
+    { "name": "挥发酚", "number": 0 },
+    { "name": "总氰化物", "number": 0 },
+    { "name": "总锌", "number": 0 },
+    { "name": "总铅", "number": 0 },
+    { "name": "天气", "number": 0 },
+    { "name": "备注", "number": "无" }
+]

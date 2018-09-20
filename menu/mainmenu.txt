@@ -1,0 +1,177 @@
+﻿{
+    "guide":
+    {
+        "url": "../guide.aspx",
+        "text": "导航页面"
+    },
+    "menu0":
+    [
+        {
+            "type": "menu",
+            "text": "除尘设施运行情况",
+            "value":
+            [
+                {
+                    "type": "page",
+                    "url": "../module/DustRemoval/DRMcondition.aspx",
+                    "text": "除尘机运行情况"
+                },
+                {
+                    "type": "page",
+                    "url": "../module/DustRemoval/DRash.aspx",
+                    "text": "除尘器放灰量"
+                }
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "环保挂牌系统",
+            "value":
+            [
+				{
+                    "type": "page",
+                    "text": "年度挂牌情况汇总",
+                    "url": "../module/EPLS/ListStatusYear.aspx"
+                },
+                {
+                    "type": "page",
+                    "text": "月度挂牌情况",
+                    "url": "../module/EPLS/ListStatus.aspx"
+                },
+                {
+                    "type": "page",
+                    "text": "生产现场检查情况",
+                    "url": "../module/EPLS/SceneInspection.html"
+                },
+                {
+                    "type": "page",
+                    "text": "岗位粉尘检查（厂部）",
+                    "url": "../module/PSManage/PDDRfactory.aspx"
+                },
+                {
+                    "type": "page",
+                    "text": "整改情况",
+                    "url": "../module/EPLS/Rect.aspx"
+                },
+                {
+                    "type": "page",
+                    "url": "../module/EPLS/SAE.html",
+                    "text": "环境污染事故情况"
+                },
+                {
+                    "type": "page",
+                    "text": "挂牌制度",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=5&order=-1"
+                }
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "污染源管理",
+            "value":
+            [
+                {
+                    "type": "page",
+                    "url": "../module/PSManage/CMresultGas.aspx",
+                    "text": "公司监测结果（气）"
+                },
+                {
+                    "type": "page",
+                    "url": "../module/PSManage/CMresultLiq.aspx",
+                    "text": "公司监测结果（水）"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=6&order=-1",
+                    "text": "岗位粉尘检查（公司）"
+                },
+                {
+                    "type": "page",
+                    "url": "../module/PSManage/PDDRfactory.aspx",
+                    "text": "岗位粉尘检查（厂部）"
+                },
+                {
+                    "type": "page",
+                    "url": "../module/PSManage/DSinspection.aspx",
+                    "text": "粉尘源点自查"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=7&order=-1",
+                    "text": "其它污染源"
+                },
+                {
+                    "type": "page",
+                    "url": "http://172.16.132.228/",
+                    "text": "在线监控视频"
+                }
+            ]
+        },
+        {
+            "type": "page",
+            "text": "组织机构与职责",
+            "url": "../module/Organize.aspx"
+        },
+        {
+            "type": "menu",
+            "text": "管理目标与考核情况",
+            "value":
+            [
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=3&order=-1",
+                    "text": "环境管理体系管理目标"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=4&order=-1",
+                    "text": "公司专业责任制考核目标"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=8&order=-1",
+                    "text": "其他考核"
+                }
+            ]
+        },
+
+        {
+            "type": "page",
+            "text": "环保资讯与动态",
+            "url": "/module/NewInfo/NInfo.aspx?classifyN=0&order=-1"
+        },
+        {
+            "type": "page",
+            "text": "环保法律法规及标准",
+            "url": "/module/NewInfo/NInfo.aspx?classifyN=1&order=-1"
+        },
+        {
+            "type": "page",
+            "text": "培训学习",
+            "url": "/module/NewInfo/NInfo.aspx?classifyN=2&order=-1"
+        },
+
+        {
+            "type": "menu",
+            "text": "应急管理",
+            "value":
+            [
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=9&order=-1",
+                    "text": "应急预案"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=10&order=-1",
+                    "text": "演练记录"
+                },
+                {
+                    "type": "page",
+                    "url": "/module/NewInfo/NInfo.aspx?classifyN=11&order=-1",
+                    "text": "事故通报"
+                }
+            ]
+        }
+    ]
+}
